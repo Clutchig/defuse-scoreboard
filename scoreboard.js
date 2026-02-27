@@ -1,11 +1,15 @@
 // ==UserScript==
-// @name         Defuse Scoreboard
-// @namespace    https://github.com/defuse-scoreboard
+// @name         Defuse Scoreboard + Kill Tracker
+// @namespace    https://github.com/Clutchig/defuse-scoreboard
 // @version      1.0
-// @description  Win/Loss/Kill scoreboard overlay for Defuse
+// @description  Persistent W/L + Kill tracker for Defly Defuse
+// @author       Clutchig
 // @match        *://defly.io/*
+// @match        *://*.defly.io/*
 // @grant        none
 // @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.js
+// @downloadURL  https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.js
 // ==/UserScript==
 
 (() => {
