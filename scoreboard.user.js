@@ -8,8 +8,8 @@
 // @match        *://*.defly.io/*
 // @grant        none
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.user.js
-// @downloadURL  https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.user.js
+// @updateURL    https://github.com/Clutchig/defuse-scoreboard/raw/refs/heads/main/scoreboard.user.js
+// @downloadURL  https://github.com/Clutchig/defuse-scoreboard/raw/refs/heads/main/scoreboard.user.js
 // ==/UserScript==
 
 (() => {
