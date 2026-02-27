@@ -3,7 +3,7 @@
 // @namespace    https://github.com/defuse-scoreboard
 // @version      1.0
 // @description  Win/Loss/Kill scoreboard overlay for Defuse
-// @match        *://*/*
+// @match        *://defly.io/*
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
