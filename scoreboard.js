@@ -1,17 +1,3 @@
-// ==UserScript==
-// @name         Defuse Scoreboard + Kill Tracker
-// @namespace    https://github.com/Clutchig/defuse-scoreboard
-// @version      1.0
-// @description  Persistent W/L + Kill tracker for Defly Defuse
-// @author       Clutchig
-// @match        *://defly.io/*
-// @match        *://*.defly.io/*
-// @grant        none
-// @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.js
-// @downloadURL  https://raw.githubusercontent.com/Clutchig/defuse-scoreboard/main/scoreboard.js
-// ==/UserScript==
-
 (() => {
     if (window.defuseStatsLoaded) return;
     window.defuseStatsLoaded = true;
