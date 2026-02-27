@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         Defuse Scoreboard
+// @namespace    https://github.com/defuse-scoreboard
+// @version      1.0
+// @description  Win/Loss/Kill scoreboard overlay for Defuse
+// @match        *://*/*
+// @grant        none
+// @run-at       document-idle
+// ==/UserScript==
+
 (() => {
     if (window.defuseStatsLoaded) return;
     window.defuseStatsLoaded = true;
@@ -272,7 +282,7 @@
             visState = (visState + 1) % 3;
             applyVisibility();
             save();
-        }           
+        }
 
         if (e.shiftKey && e.key.toLowerCase() === "s") {
             toggleTracking();
