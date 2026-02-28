@@ -256,18 +256,35 @@
         }
     }
 
-    new MutationObserver(() => {
-        insertBoard();
-        const userInfo = document.querySelector(".user-info");
-        if (userInfo) maybeCount(userInfo.textContent);
-        const infos = document.querySelectorAll("#chat-history .info");
-        if (infos.length > 0) maybeCountKill(infos[infos.length - 1].textContent);
-    }).observe(document.documentElement, {
-        childList: true,
-        subtree: true
-    });
+    function startObserver() {
+        new MutationObserver(() => {
+            insertBoard();
+            const userInfo = document.querySelector(".user-info");
+            if (userInfo) maybeCount(userInfo.textContent);
+            const infos = document.querySelectorAll("#chat-history .info");
+            if (infos.length > 0) maybeCountKill(infos[infos.length - 1].textContent);
+        }).observe(document.documentElement, {
+            childList: true,
+            subtree: true
+        });
+    }
+
+    if (document.documentElement) {
+        startObserver();
+    } else {
+        document.addEventListener("DOMContentLoaded", startObserver);
+    }
+
+    let chatting = false;
 
     document.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            chatting = !chatting;
+            return;
+        }
+
+        if (chatting) return;
+
         if (!e.shiftKey && e.key.toLowerCase() === "h") {
             visState = (visState + 1) % 3;
             applyVisibility();
