@@ -23,7 +23,7 @@ Stats are saved using `localStorage` (persist across refresh and tab close).
 - Click ✕
 
 **Visibility Toggle**
-- `Shift + H`
+- `Press H`
   1. Score + Kills  
   2. Score Only  
   3. Hidden  
