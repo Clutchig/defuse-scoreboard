@@ -6,7 +6,7 @@ Tracks:
 - Wins
 - Losses
 - Kills
-- Session start/stop time
+- Session start/stop time + start/stop score
 
 Stats are saved using `localStorage` (persist across refresh and tab close).
 
