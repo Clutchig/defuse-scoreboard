@@ -1,0 +1,9 @@
+{
+  "name": "Defuse Scoreboard",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "type": "javascript",
+  "scripts": [
+    "scoreboard.js"
+  ]
+}
