@@ -288,7 +288,16 @@
         document.addEventListener("DOMContentLoaded", startObserver);
     }
 
+    let chatting = false;
+
     document.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            chatting = !chatting;
+            return;
+        }
+
+        if (chatting) return;
+
         if (!e.shiftKey && e.key.toLowerCase() === "h") {
             visState = (visState + 1) % 3;
             applyVisibility();
